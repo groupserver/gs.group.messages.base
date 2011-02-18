@@ -1,0 +1,15 @@
+<div class="section" id="gs-group-messages">
+  <h2>Messages</h2>
+  <p>
+    Messages are the core of a GroupServer group.
+    A group member can add a post to a group using the Web or by email.
+    When the member does this the post is displayed in a 
+    <a href="#gs-group-messages-topic">topic</a>.
+    This topic is common to all posts with the same name.
+    However, a <a href="#gs-group-messages-post">post</a> can also be
+    seen on its own page.
+    <a href="#gs-group-messages-image">Images</a> that are added to the 
+    group are shown on their own page.    
+  </p>
+</div>
+
