@@ -11,5 +11,66 @@
     <a href="#gs-group-messages-image">Images</a> that are added to the 
     group are shown on their own page.    
   </p>
+  <p>
+    The visibility of messages in a group is detailed in
+    <a href="#gs-group-messages-privacy">the table below.</a>
+  </p>
+  <table id="gs-group-messages-privacy">
+    <caption>Visibility of Messages in a Group</caption>
+    <thead>
+      <tr>
+        <td>&#160;</td>
+        <th colspan="3">Group Privacy</th>
+      </tr>
+      <tr>
+        <td>&#160;</td>
+        <th>Public</th>
+        <th>Private</th>
+        <th>Secret</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Email Messages</th>
+        <td>Group members only</td>
+        <td>Group members only</td>
+        <td>Group members only</td>
+      </tr>
+      <tr>
+        <th style="text-align:left; border-top: thin solid black;"
+          colspan="4">Pages on the Web</th>
+      </tr>
+      <tr>
+        <th>Topic</th>
+        <td>Everyone</td>
+        <td>Logged in members only</td>
+        <td>Logged in members only</td>
+      </tr>
+      <tr>
+        <th>Post</th>
+        <td>Everyone</td>
+        <td>Logged in members only</td>
+        <td>Logged in members only</td>
+      </tr>
+      <tr>
+        <th>Files</th>
+        <td>Everyone</td>
+        <td>Logged in members only</td>
+        <td>Logged in members only</td>
+      </tr>
+      <tr>
+        <th>Images</th>
+        <td>Everyone</td>
+        <td>Logged in members only</td>
+        <td>Logged in members only</td>
+      </tr>
+      <tr>
+        <th>Add a Post</th>
+        <td>Logged in members only</td>
+        <td>Logged in members only</td>
+        <td>Logged in members only</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
