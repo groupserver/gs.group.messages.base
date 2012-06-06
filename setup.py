@@ -32,7 +32,9 @@ setup(name='gs.group.messages.base',
     zip_safe=True,
     install_requires=[
         'setuptools',
-        'gs.help'
+        'gs.group.home',
+        'gs.help',
+        'gs.search.base',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
