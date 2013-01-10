@@ -2,6 +2,20 @@
 <configure xmlns="http://namespaces.zope.org/zope"
   xmlns:browser="http://namespaces.zope.org/browser">
 
+  <browser:viewlet
+    name="gs-group-messages-base" 
+    manager="gs.group.home.interfaces.IGroupHomepageMain"
+    class="gs.group.home.simpletab.PublicTab"
+    template="browser/templates/main.pt"
+    weight="50"
+    permission="zope2.View"/>
+  <browser:viewletManager
+    name="groupserver.GroupHomepageMessages" 
+    provides=".interfaces.IGroupHomepageMessages"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/tabs.pt"
+    permission="zope2.View" />
+
   <browser:viewlet 
     name="gs-group-messages-base-script" 
     manager="gs.group.home.interfaces.IGroupHomepageScripts"

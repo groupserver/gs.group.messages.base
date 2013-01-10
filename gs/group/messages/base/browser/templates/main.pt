@@ -1,0 +1,3 @@
+<p tal:replace="structure provider:groupserver.GroupHomepageMessages">
+  This is a display of the messages in the group.
+</p>
