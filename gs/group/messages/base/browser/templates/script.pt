@@ -6,7 +6,7 @@
     type="text/javascript">
     jQuery.noConflict();
     jQuery(document).ready( function () {
-       jQuery("#gs-group-messages-base-tabs").tabs();
+       //jQuery("#gs-group-messages-base-tabs").tabs();
     });
   </script>
 </div><!--gs-group-messages-base-script-->

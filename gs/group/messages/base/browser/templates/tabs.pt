@@ -1,17 +1,13 @@
 <div id="gs-group-messages-base-tabs">
-  <ul id="gs-group-messages-base-tabs-buttons">
-    <tal:block repeat="viewlet options/viewlets">
-      <li>
-        <a href="#gs-group-messages-base-tabs-number"
-           tal:attributes="href string:#gs-group-messages-base-tabs-${repeat/viewlet/index}"
-          tal:content="viewlet/title">Tab Text</a>
-      </li>
-    </tal:block>
+  <ul id="gs-group-messages-base-tabs-buttons" class="nav nav-tabs">
+    <li tal:repeat="viewlet options/viewlets">
+      <a tal:attributes="href string:#gs-group-messages-base-tabs-${repeat/viewlet/index}"
+         href="#"><h2 tal:content="viewlet/title">Tab Text</h2></a>
+    </li>
   </ul><!--gs-group-messages-base-tabs-buttons-->
-  <tal:block repeat="viewlet options/viewlets">
-    <div tal:attributes="id string:gs-group-messages-base-tabs-${repeat/viewlet/index}" 
-         tal:content="structure viewlet/render">
-      Tab Content
-    </div><!--gs-group-messages-base-tabs-n-->
-  </tal:block>
+  <div tal:repeat="viewlet options/viewlets"
+       tal:attributes="id string:gs-group-messages-base-tabs-${repeat/viewlet/index}" 
+       tal:content="structure viewlet/render">
+    Tab Content
+  </div><!--gs-group-messages-base-tabs-n-->
 </div><!--gs-group-messages-base-tabs-->
