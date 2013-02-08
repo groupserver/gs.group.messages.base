@@ -3,8 +3,7 @@
     <tal:block repeat="viewlet options/viewlets">
       <li tal:define="n repeat/viewlet/index">
         <a data-toggle="tab"
-           tal:attributes="href string:#gs-group-messages-base-tabs-${n};
-                           class python:'' if n != 0 else 'active'"
+           tal:attributes="href string:#gs-group-messages-base-tabs-${n};"
            href="#"><h2 tal:content="viewlet/title">Tab Text</h2></a>
       </li>
     </tal:block>
@@ -13,8 +12,7 @@
     <tal:block repeat="viewlet options/viewlets">
       <div class="tab-pane"
            tal:define="n repeat/viewlet/index"
-           tal:attributes="id string:gs-group-messages-base-tabs-${n};
-                           class python:'tab-pane' if n != 0 else 'tab-pane active'"
+           tal:attributes="id string:gs-group-messages-base-tabs-${n};"
            tal:content="structure viewlet/render">
         Tab Content
       </div><!--tab-pane-->
