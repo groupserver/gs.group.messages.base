@@ -16,14 +16,6 @@
     template="browser/templates/tabs.pt"
     permission="zope2.View" />
 
-  <browser:viewlet 
-    name="gs-group-messages-base-script" 
-    manager="gs.group.home.interfaces.IGroupHomepageScripts"
-    class="gs.group.home.simpletab.PublicTab"
-    template="browser/templates/script.pt"
-    permission="zope2.View"
-    weight="5"/>
-  
   <!--Help-->
   <browser:viewlet 
     name="gs-group-messages-help"
