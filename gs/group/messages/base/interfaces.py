@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 from zope.viewlet.interfaces import IViewletManager
 
 
