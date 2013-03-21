@@ -33,6 +33,7 @@ setup(name='gs.group.messages.base',
     install_requires=[
         'setuptools',
         'zope.viewlet',
+        'gs.content.js.bootstrap',
         'gs.group.home',
         'gs.help',
         'gs.search.base',
