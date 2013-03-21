@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import os
 from setuptools import setup, find_packages
 from version import get_version
@@ -32,12 +32,12 @@ setup(name='gs.group.messages.base',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'zope.viewlet',
         'gs.group.home',
         'gs.help',
         'gs.search.base',
-        # -*- Extra requirements: -*-
+        'gs.viewlet',
     ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
