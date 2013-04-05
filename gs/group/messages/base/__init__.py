@@ -1,2 +1,2 @@
 # -*- coding: utf-8 -*-
-# This space deliberately left blank
+from utils import get_icon  # lint:ok
