@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright © 2013, 2014 OnlineGroups.net and Contributors. -->
+<!-- All Rights Reserved. -->
+
+<!-- This software is subject to the provisions of the Zope Public -->
+<!-- License, Version 2.1 (ZPL).  A copy of the ZPL should accompany this -->
+<!-- distribution. -->
+
+<!-- THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED -->
+<!-- WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED -->
+<!-- WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE. -->
 <configure xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser">
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <include package="zope.viewlet" file="meta.zcml" />
 
   <browser:viewlet
-    name="gs-group-messages-base" 
+    name="gs-group-messages-base"
     manager="gs.group.home.interfaces.IGroupHomepageMain"
     class="gs.group.home.simpletab.PublicTab"
     template="browser/templates/main.pt"
     weight="50"
     permission="zope2.View"/>
   <browser:viewletManager
-    name="groupserver.GroupHomepageMessages" 
+    name="groupserver.GroupHomepageMessages"
     provides=".interfaces.IGroupHomepageMessages"
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/tabs.pt"
     permission="zope2.View" />
 
   <!--Help-->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-group-messages-help"
     manager="gs.help.interfaces.IUserHelp"
     template="browser/templates/help.pt"
     permission="zope2.Public"
     weight="10" />
-  
 </configure>

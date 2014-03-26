@@ -3,13 +3,13 @@
   <p>
     Messages are the core of a GroupServer group.
     A group member can add a post to a group using the Web or by email.
-    When the member does this the post is displayed in a 
+    When the member does this the post is displayed in a
     <a href="#gs-group-messages-topic">topic</a>.
     This topic is common to all posts with the same name.
     However, a <a href="#gs-group-messages-post">post</a> can also be
     seen on its own page.
-    <a href="#gs-group-messages-image">Images</a> that are added to the 
-    group are shown on their own page.    
+    <a href="#gs-group-messages-image">Images</a> that are added to the
+    group are shown on their own page.
   </p>
   <p>
     The visibility of messages in a group is detailed in
@@ -73,4 +73,3 @@
     </tbody>
   </table>
 </div>
-
