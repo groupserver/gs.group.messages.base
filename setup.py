@@ -21,8 +21,8 @@ version = get_version()
 setup(name='gs.group.messages.base',
     version=version,
     description="Base code for messages in a GroupServer group",
-    long_description=open("README.txt").read() + "\n" +
-                      open(os.path.join("docs", "HISTORY.txt")).read(),
+    long_description=open("README.rst").read() + "\n" +
+                      open(os.path.join("docs", "HISTORY.rst")).read(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         "Environment :: Web Environment",
