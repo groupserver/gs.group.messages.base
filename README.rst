@@ -7,7 +7,7 @@ Core messages support for GroupServer
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-03-21
+:Date: 2015-03-04
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -29,7 +29,9 @@ The viewlet ``gs-group-messages-base-script`` appears on the main-section
 of the Group page [#groupPage]_. It provides a `viewlet manager`_ that is
 used by the different messages products that want to appear on the the
 group page [#others]_. The manager provides the
-``gs.group.messages.base.interfaces.IGroupHomepageMessages`` interface::
+``gs.group.messages.base.interfaces.IGroupHomepageMessages`` interface:
+
+.. code-block:: xml
 
   <browser:viewlet 
     name="gs-group-messages-topics-tab"
@@ -72,7 +74,9 @@ Get the icon for the associated MIME-type.
             
             f['icon'] = get_icon(f['mime_type'])
 
-          Use the icon in the page template::
+          Use the icon in the page template:
+
+          .. code-block:: xml
 
             <a class="icon-alone" href="#"
                tal:attributes="href f/url; title f/name">
@@ -86,7 +90,7 @@ Get the icon for the associated MIME-type.
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/gs.group.messages.base
+- Code repository: https://github.com/groupserver/gs.group.messages.base
 - Questions and comments to http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
@@ -100,13 +104,13 @@ Resources
 .. [#groupPage] The main section of the Group page is provided by
                 ``gs.group.home.interfaces.IGroupHomepageMain``. See
                 ``gs.group.home``
-                <https://source.iopen.net/groupserver/gs.group.home>
+                <https://github.com/groupserver/gs.group.home>
 .. _viewlet manager: http://docs.zope.org/zope.viewlet/index.html
 .. [#others] See ``gs.group.messages.posts``
-             <https://source.iopen.net/groupserver/gs.group.messages.posts/>,
+             <https://github.com/groupserver/gs.group.messages.posts/>,
              and ``gs.group.messages.topics``
-             <https://source.iopen.net/groupserver/gs.group.messages.topics/>.
+             <https://github.com/groupserver/gs.group.messages.topics/>.
 .. _Bootstrap tabs: http://twitter.github.com/bootstrap/javascript.html#tabs
 .. _WAI:ARIA roles: http://www.w3.org/TR/wai-aria/roles
 .. [#css] See ``gs.content.css``
-             <https://source.iopen.net/groupserver/gs.content.css/>
+             <https://github.com/groupserver/gs.content.css/>
