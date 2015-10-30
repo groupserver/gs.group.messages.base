@@ -8,6 +8,8 @@ There are two parts to the API supplied by the
 :mod:`gs.group.messages.base` product: there is a viewlet_ and
 some utilities_.
 
+.. _viewlet:
+
 Viewlet
 =======
 
@@ -43,6 +45,8 @@ becomes the tab-title, with the content of the viewlet becoming
 the tab-panel. All the tabs are marked-up with `WAI:ARIA
 roles`_. The viewlet itself has the HTML ``id`` attribute value
 ``gs-group-messages-base-tabs``
+
+.. _utilities:
 
 Utilities
 =========

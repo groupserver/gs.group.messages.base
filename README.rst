@@ -7,7 +7,7 @@ Core messages support for GroupServer
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2015-03-04
+:Date: 2015-10-30
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 4.0 International License`_
@@ -25,14 +25,17 @@ group. This module supplies:
 
 * Some help (``gs-group-messages-help``)
 * A viewlet manager for displaying the *Messages * tab on the Group page
-* A JavaScript viewlet_
-* Some utilities
+* Some utilities/
 
 Resources
 =========
 
-- Code repository: https://github.com/groupserver/gs.group.messages.base
-- Questions and comments to http://groupserver.org/groups/development
+- Documentation:
+  http://groupserver.readthedocs.org/projects/gsgroupmessagesbase/
+- Code repository:
+  https://github.com/groupserver/gs.group.messages.base
+- Questions and comments to
+  http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
 .. _GroupServer: http://groupserver.org/
