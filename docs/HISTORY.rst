@@ -1,6 +1,13 @@
 Changelog
 =========
 
+3.2.0 (2015-10-30)
+------------------
+
+* Adding the ``file_size_format`` utility
+* Adding unit tests
+* Adding Sphinx documentation
+
 3.1.2 (2015-02-04)
 ------------------
 

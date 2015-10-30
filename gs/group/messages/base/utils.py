@@ -44,7 +44,9 @@ def file_size_format(bytes):
 :returns: The file size with the units
 :rtype: str
 
-.. seealso: http://python.todaysummary.com/q_python_11123.html"""
+.. seealso::
+
+    The original version of this function <http://python.todaysummary.com/q_python_11123.html>"""
     bytes = int(bytes)
     if bytes is 0:
         retval = 'empty'
