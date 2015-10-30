@@ -56,16 +56,17 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'zope.tal',
-        'zope.tales',
         'zope.viewlet',
-        'gs.content.js.bootstrap',
-        'gs.group.home',
-        'gs.help',
-        'gs.search.base',
-        'gs.viewlet',
     ],
     test_suite="{0}.tests.test_all".format(name),
+    extras_require={'docs': ['Sphinx'],
+                    'zope': ['zope.tal',
+                             'zope.tales',
+                             'gs.content.js.bootstrap',
+                             'gs.group.home',
+                             'gs.help',
+                             'gs.search.base',
+                             'gs.viewlet', ]},
     entry_points="""
     # -*- Entry points: -*-
     """,)
