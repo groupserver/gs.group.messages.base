@@ -31,7 +31,7 @@ Resources
 =========
 
 - Documentation:
-  http://groupserver.readthedocs.org/projects/gsgroupmessagesbase/
+  http://groupserver.readthedocs.io/projects/gsgroupmessagesbase/
 - Code repository:
   https://github.com/groupserver/gs.group.messages.base
 - Questions and comments to
